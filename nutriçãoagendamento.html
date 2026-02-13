@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            margin: 0%;
+        }
+        .divgeral {
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(17, 100px);
+        }
+
+        /* ===== DESKTOP ===== */
+
+        .agendamento-titulo {
+            display: grid;
+            grid-column: 6 / 16;
+            grid-row: 4 / 5;
+            text-align: center;
+            align-items: center;
+        }
+
+        .agendamento-texto {
+            display: grid;
+            grid-column: 6 / 16;
+            grid-row: 6 / 8;
+            text-align: center;
+            align-items: center;
+        }
+
+        .agendamento-reforco {
+            display: grid;
+            grid-column: 6 / 16;
+            grid-row: 8 / 10;
+            text-align: center;
+            align-items: center;
+        }
+
+        .agendamento-botao {
+            display: grid;
+            grid-column: 8 / 14;
+            grid-row: 11 / 12;
+            text-align: center;
+            align-items: center;
+        }
+
+        /* ===== MOBILE ===== */
+
+        @media (max-width: 768px) {
+
+            .agendamento-titulo {
+                display: grid;
+                grid-column: 1 / 21;
+                grid-row: 1 / 4;
+                color: white;
+                font-size: 40px;
+                text-align: center;
+                align-items: center;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/nutriçãocabeçalho.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .agendamento-texto {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 4 / 6;
+                text-align: center;
+                align-items: center;
+                text-align: left;
+                align-items: center;
+                color: rgb(84, 83, 83);
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .imagem1agendamento {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 6 / 9;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/nuriçãoagendamedo.jpg");
+                border-radius: 4px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .agendamento-reforco {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 9 / 11;
+                text-align: center;
+                align-items: center;
+                text-align: left;
+                align-items: center;
+                color: rgb(84, 83, 83);
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .imagem2agendamento {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 11 / 14;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/atendimentoprofissionalnutrição.jpg");
+                border-radius: 4px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .agendamento-botao {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 14 / 16;
+                text-align: center;
+                align-items: center;
+                text-align: left;
+                align-items: center;
+                color: rgb(84, 83, 83);
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+            .whatsapp {
+                display: grid;
+                grid-column: 8/14;
+                grid-row: 16/17;
+                align-items: center;
+            }
+            .ultimadiv {
+                display: grid;
+                grid-column: 1/21;
+                grid-row: 17/18;
+                
+            }
+            button {
+                background-color: rgb(66, 198, 66);
+                border-radius: 8px;
+                padding: 10px 20px;
+                font-size: 15px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="divgeral">
+
+    <div class="agendamento-titulo">
+        <h2>Agendamento</h2>
+    </div>
+
+    <div class="agendamento-texto">
+        <p>
+            Agendar sua consulta é simples, rápido e totalmente seguro. Em poucos cliques, você dá o 
+            primeiro passo para cuidar da sua saúde com o acompanhamento de uma nutricionista qualificada e comprometida com resultados reais.
+        </p>
+    </div>
+        <div class="imagem1agendamento"></div>
+    <div class="agendamento-reforco">
+        <p>
+            O atendimento é individualizado, ético e baseado em evidências científicas, respeitando sua rotina, seus objetivos e suas necessidades específicas. 
+            Cada consulta é planejada para oferecer clareza, orientação prática e estratégias nutricionais sustentáveis, que podem ser aplicadas no dia a dia sem dietas extremas ou soluções milagrosas.
+        </p>
+    </div>
+        <div class="imagem2agendamento"></div>
+    <div class="agendamento-botao">
+        <p>
+            Aqui, você encontra um acompanhamento humano e responsável, focado não apenas na alimentação, mas na sua saúde como um todo, promovendo mudanças duradouras e qualidade de vida.
+
+Clique no botão abaixo para escolher o melhor dia e horário para sua consulta. O botão de agendamento permanece sempre visível para facilitar seu acesso e garantir praticidade em qualquer momento.
+        </p>
+    </div>
+    <div class="whatsapp">
+    <button>agendamento</button>
+    </div>
+    <div class="ultimadiv"></div>
+
+</div>
+
+</body>
+</html>

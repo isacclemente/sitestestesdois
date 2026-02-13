@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+        body {
+            margin: 0%;
+        }
+        .divgeral {
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(30, 100px);
+        }
+        @media (max-width: 768px) {
+          .divgeral {
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(92, 100px);
+        }
+        
+        .imagemcabeçalho {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 1/4;
+            background-image: url("C:/Users/isacc/teste/imagens.html/img/pratossaudávéisdois.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .frasesobrecomerbem {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 4/6;
+            text-align: center;
+            align-items: center;
+            color: rgb(84, 83, 83);
+        }
+
+        .cafedamanhã {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 6/7;
+            text-align: center;
+            align-items: center;
+            font-size: 20px;
+            color: rgb(84, 83, 83);
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+        }
+
+        .panqueca {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 7/8;
+            text-align: left;
+            align-items: center;
+            font-size: 30px;
+            color: rgb(84, 83, 83);
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+        }
+        .imagempanqueca {
+           display: grid;
+            grid-column: 2/20;
+            grid-row: 8/11;
+            background-image: url("C:/Users/isacc/teste/imagens.html/img/panquecadeaveia.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+
+        .receitapanqueca {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 11/17;
+            text-align: left;
+            align-items: ;
+            font-size: ;
+            color: rgb(84, 83, 83);
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .omelete {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 17/18;
+            text-align: left;
+            align-items: center;
+            font-size: 30px;
+            color: rgb(84, 83, 83);
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+        }
+
+        .imagemomelete {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 18/21;
+            background-image: url("C:/Users/isacc/teste/imagens.html/img/omeletecomlegumes.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+
+        .receitaomelete {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 21/27;
+            text-align: left;
+            align-items: ;
+            font-size: ;
+            color: rgb(84, 83, 83);
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .almoçoequilibrado {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 28/29;
+            text-align: center;
+            align-items: center;
+            font-size: 20px;
+            color: rgb(84, 83, 83);
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+        }
+
+        .frangogrelhado {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 29/30;
+            text-align: left;
+            align-items: center;
+            font-size: 30px;
+            color: rgb(84, 83, 83);
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+        }
+
+        .imagemfrangogrelhado {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 30/33;
+            background-image: url("C:/Users/isacc/teste/imagens.html/img/frangoelegumes.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+        
+        .receitafrangogrelhado {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 33/39;
+            text-align: left;
+            align-items: ;
+            font-size: ;
+            color: rgb(84, 83, 83);
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .bowlnutricional {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 39/40;
+            text-align: left;
+            align-items: center;
+            font-size: 30px;
+            color: rgb(84, 83, 83);
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+        }
+        .imagembowlnutricional {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 40/43;
+            background-image: url("C:/Users/isacc/teste/imagens.html/img/bowlcompleto.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+        .receitabowlnutricional {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 43/52;
+            text-align: left;
+            align-items: ;
+            font-size: ;
+            color: rgb(84, 83, 83);
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .jantarleve {
+           display: grid;
+            grid-column: 1/21;
+            grid-row: 52/53;
+            text-align: center;
+            align-items: center;
+            font-size: 20px;
+            color: rgb(84, 83, 83);
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings: 
+        }
+        .sopadelegumes {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 53/54;
+            text-align: left;
+            align-items: center;
+            font-size: 30px;
+            color: rgb(84, 83, 83);
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+        }
+        .imagemsopadelegumes {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 54/57;
+            background-image: url("C:/Users/isacc/teste/imagens.html/img/sopadelumess.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+        .receitasopadelegumes {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 57/64;
+            text-align: left;
+            align-items: ;
+            font-size: ;
+            color: rgb(84, 83, 83);
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .peixeassado {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 64/65;
+            text-align: left;
+            align-items: center;
+            font-size: 30px;
+            color: rgb(84, 83, 83);
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings: 
+        }
+        .imagempeixeassado {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 65/68;
+            background-image: url("C:/Users/isacc/teste/imagens.html/img/peixecomlegumes.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+        .receitapeixeassado {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 68/73;
+            text-align: left;
+            align-items: ;
+            font-size: ;
+            color: rgb(84, 83, 83);
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .lanchessaudaveis {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 74/75;
+            text-align: center;
+            align-items: center;
+            font-size: 20px;
+            color: rgb(84, 83, 83);
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+        }
+        .iogurtenatural {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 75/76;
+            text-align: left;
+            align-items: center;
+            font-size: 30px;
+            color: rgb(84, 83, 83);
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+        }
+        .imagemiogurtenatural {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 76/79;
+            background-image: url("C:/Users/isacc/teste/imagens.html/img/iogurte.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+        .receitaiogurte {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 79/84;
+            text-align: left;
+            align-items: ;
+            font-size: ;
+            color: rgb(84, 83, 83);
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .mixoleaginosas {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 84/85;
+            text-align: left;
+            align-items: center;
+            font-size: 30px;
+            color: rgb(84, 83, 83);
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+        }
+        .imagemmix {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 85/88;
+            background-image: url("C:/Users/isacc/teste/imagens.html/img/mix.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 4px;
+        }
+        .receitamix {
+            display: grid;
+            grid-column: 1/21;
+            grid-row: 88/92;
+            text-align: left;
+            align-items: ;
+            font-size: ;
+            color: rgb(84, 83, 83);
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .rodape {
+             display: grid;
+            grid-column: 2/20;
+            grid-row: 92/93;
+            font-size: 12px;
+            text-align: center;
+            align-items: center;
+            color: rgb(84, 83, 83);
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="divgeral">
+    <div class="imagemcabeçalho"></div>
+    <div class="frasesobrecomerbem">Comer bem não precisa ser complicado, caro ou sem sabor. Nesta seção, reunimos receitas saudáveis, práticas e pensadas para a vida real, respeitando diferentes objetivos nutricionais, rotinas corridas e 
+    preferências alimentares. Todas as receitas são alinhadas a princípios de equilíbrio, qualidade nutricional e prazer ao comer.
+    </div>
+    <div class="cafedamanhã">CAFÉ DA MANHÃ SAUDÁVEL</div>
+    <div class="panqueca">Panqueca de Banana com Aveia</div>
+    <div class="imagempanqueca"></div>
+    <div class="receitapanqueca">
+        <ul>
+            <strong>ingredientes:</strong>
+            <li>1 banana madura</li>
+            <li>1 ovo</li>
+            <li>2 colheres de sopa de aveia (em flocos finos ou farinha de aveia)</li>
+            <li>1 pitada de canela (opcional)</li>
+            <li>1 pitada de fermento químico (opcional, deixa mais fofinha)</li>
+            <li>Óleo ou manteiga só pra untar a frigideira</li>
+             <br>
+             <strong>Modo de preparo:</strong>
+            <li>Amasse bem a banana com um garfo.</li>
+            <li>Acrescente o ovo e misture até ficar homogêneo.</li>
+            <li>Junte a aveia, a canela e o fermento (se usar) e misture bem.</li>
+            <li>Aqueça uma frigideira antiaderente em fogo médio e unte levemente.</li>
+            <li>Despeje a massa e espalhe formando uma panqueca.</li>
+            <li>Quando dourar por baixo, vire e deixe dourar o outro lado.</li>
+            <br>
+            <strong>Dicas pra variar:</strong>
+            <li>Doce: coloque mel, pasta de amendoim ou um pouquinho de chocolate 70%.</li>
+            <li>Mais proteína: acrescente 1 colher de whey ou use 2 claras + 1 ovo.</li>
+            <li>Sem ovo: dá pra fazer só banana + aveia + um pouquinho de água ou leite.</li>
+        </ul>
+    </div>
+    <div class="omelete">Omelete Funcional de Legumes</div>
+    <div class="imagemomelete"></div>
+    <div class="receitaomelete">
+        <ul>
+            <strong>Ingredientes:</strong>
+            <li>2 ovos</li>
+            <li>1 colher de sopa de cebola picada</li>
+            <li>2 colheres de sopa de tomate picado</li>
+            <li>2 colheres de sopa de cenoura ralada ou abobrinha ralada</li>
+            <li>1 pitada de sal</li>
+            <li>Pimenta-do-reino ou cúrcuma a gosto (opcional)</li>
+            <li>1 fio de azeite pra untar a frigideira</li>
+            <br>
+            <strong>Modo de preparo:</strong>
+            <li>Em um bowl, bata levemente os ovos com o garfo.</li>
+            <li>Acrescente os legumes, o sal e os temperos. Misture bem.</li>
+            <li>Aqueça uma frigideira antiaderente em fogo médio e unte com azeite.</li>
+            <li>Despeje a mistura e tampe a frigideira.</li>
+            <li>Quando a base estiver firme, vire ou deixe terminar de cozinhar tampado.</li>
+            <br>
+            <strong>Por que é “funcional”?</strong>
+            <li>Ovos → proteína e saciedade</li>
+            <li>Legumes → fibras, vitaminas e melhor digestão</li>
+            <li>Gordura boa (azeite) → ajuda na absorção de nutrientes</li>
+            <br>
+            <strong>Variações rápidas:</strong>
+            <li>Mais proteína: acrescente frango desfiado ou atum</li>
+            <li>Low carb: use só legumes verdes</li>
+            <li>Fitness: coloque chia ou linhaça</li>
+            <li>Queijo: um pouco de muçarela ou queijo coalho (com moderação 😄)</li>
+        </ul>
+    </div>
+    <div class="almoçoequilibrado">Almoço Equilibrado</div>
+    <div class="frangogrelhado">Frango Grelhado com Arroz Integral e Legumes</div>
+    <div class="imagemfrangogrelhado"></div>
+    <div class="receitafrangogrelhado">
+        <ul>
+            <strong>Ingredientes:</strong>
+            <li>120 a 150 g de peito de frango</li>
+            <li>1 dente de alho amassado</li>
+            <li>Sal a gosto</li>
+            <li>Pimenta-do-reino, páprica ou açafrão (opcional)</li>
+            <li>1 fio de azeite</li>
+            <li>½ xícara de arroz integral cru</li>
+            <li>1 xícara de água</li>
+            <li>1 pitada de sal</li>
+            <li>Brócolis</li>
+            <li>Cenoura</li>
+            <li>Abobrinha</li>
+            <li>Vagem</li>
+            <li>Couve-flor</li>
+            <br>
+            <strong>modo de preparo:</strong>
+            <li>Lave o arroz.</li>
+            <li>Leve ao fogo com a água e o sal.</li>
+            <li>Cozinhe em fogo baixo por cerca de 30 a 40 minutos, até a água secar e os grãos ficarem macios.</li>
+            <li>Tempere o frango com alho, sal e especiarias.</li>
+            <li>Aqueça uma frigideira ou grelha com um fio de azeite.</li>
+            <li>Grelhe o frango até dourar bem dos dois lados e ficar suculento por dentro.</li>
+            <li>Cozinhe os legumes no vapor ou na água por poucos minutos (pra não perder nutrientes).</li>
+            <li>Finalize com uma pitada de sal e um fio de azeite.</li>
+        </ul>
+    </div>
+    <div class="bowlnutricional">Bowl Nutricional Completo</div>
+    <div class="imagembowlnutricional"></div>
+    <div class="receitabowlnutricional">
+        <ul>
+            <p><strong>ingredientes:</strong></p>
+            <strong>Base (escolha 1):</strong>
+            <br>
+            <li>½ xícara de arroz integral ou</li>
+            <li>½ xícara de quinoa cozida ou</li>
+            <li>1 batata-doce média cozida em cubos</li>
+            <br>
+            <strong>Proteína (escolha 1):</strong>
+            <br>
+            <li>120–150 g de frango grelhado</li>
+            <li>2 ovos cozidos ou mexidos</li>
+            <li>Atum ou salmão grelhado</li>
+            <li>Grão-de-bico ou lentilha (versão vegetariana)</li>
+            <br>
+            <strong>Legumes e verduras:</strong>
+            <li>Folhas verdes (alface, rúcula ou espinafre)</li>
+            <li>Cenoura ralada</li>
+            <li>tomate</li>
+            <li>Brócolis ou abobrinha</li>
+            <br>
+            <strong>Gorduras boas:</strong>
+            <br>
+            <li>1 colher de sopa de azeite ou</li>
+            <li>Abacate em cubos ou</li>
+            <li>Castanhas/sementes (chia, linhaça ou gergelim)</li>
+            <br>
+            <strong>Temperos:</strong>
+            <br>
+            <li>Sal</li>
+            <li>Limão</li>
+            <li>Pimenta-do-reino</li>
+            <li>Ervas (orégano, cúrcuma, páprica)</li>
+            <br>
+            <strong>Modo de montagem:</strong>
+            <br>
+            <li></li>
+            <li>Coloque a base no fundo do bowl.</li>
+            <li>Acrescente a proteína escolhida.</li>
+            <li>Distribua os legumes e folhas ao redor.</li>
+            <li>Finalize com a gordura boa e os temperos.</li>
+            <br>
+            <strong>Por que ele é “completo”?</strong>
+            <br>
+            <li>Carboidrato → energia</li>
+            <li>Proteína → saciedade e manutenção muscular</li>
+            <li>Fibras → intestino e controle glicêmico</li>
+            <li>Gorduras boas → hormônios e absorção de vitaminas</li>
+        </ul>
+    </div>
+    <div class="jantarleve">Jantar Leve</div>
+    <div class="sopadelegumes">Sopa de Legumes com Proteína</div>
+    <div class="imagemsopadelegumes"></div>
+    <div class="receitasopadelegumes">
+        <ul>
+            <p><strong>Ingredientes:</strong></p>
+            <strong>Legumes:</strong>
+            <li>1 batata pequena ou ½ xícara de abóbora em cubos</li>
+            <li>1 cenoura média picada</li>
+            <li>½ abobrinha picada</li>
+            <li>½ cebola picada</li>
+            <li>1 dente de alho amassado</li>
+            <br>
+            <strong>Proteína (escolha 1):</strong>
+            <li>120 g de frango desfiado</li>
+            <li>Carne magra em cubos</li>
+            <li>Lentilha ou grão-de-bico cozido (vegetariana)</li>
+            <br>
+            <strong>Outros:</strong>
+            <li>1 colher de chá de azeite</li>
+            <li>Sal a gosto</li>
+            <li>Pimenta-do-reino, cúrcuma ou cheiro-verde</li>
+            <li>Água até cobrir</li>
+            <br>
+            <strong>Modo de preparo:</strong>
+            <li>Em uma panela, refogue a cebola e o alho no azeite.</li>
+            <li>Acrescente os legumes e cubra com água.</li>
+            <li>Cozinhe até os legumes ficarem macios.</li>
+            <li>Adicione a proteína já cozida.</li>
+            <li>Ajuste o sal e os temperos e deixe ferver por mais 5 minutos.</li>
+            <li>Finalize com cheiro-verde.</li>
+            <br>
+            <strong>Benefícios:</strong>
+            <li>Leve e saciante</li>
+            <li>Rica em fibras, vitaminas e proteína</li>
+            <li>Ótima pra jantar, emagrecimento ou dias frios</li>
+        </ul>
+    </div>
+    <div class="peixeassado">Peixe Assado com Vegetais</div>
+    <div class="imagempeixeassado"></div>
+    <div class="receitapeixeassado">
+        <ul>
+            <p><strong>Ingredientes:</strong></p>
+             <strong>Peixe (escolha 1):</strong>
+            <li>150 g de filé de tilápia, merluza, pescada ou linguado</li>
+            <li>Suco de ½ limão</li>
+            <li>1 dente de alho amassado</li>
+            <li>Sal e pimenta-do-reino a gosto</li>
+            <br>
+            <strong>Vegetais:</strong>
+            <li>1 batata pequena em rodelas ou ½ xícara de batata-doce</li>
+            <li>½ cenoura em rodelas</li>
+            <li>½ abobrinha em rodelas</li>
+            <li>½ cebola em rodelas</li>
+            <br>
+            <strong>Modo de preparo:</strong>
+            <li>Tempere o peixe com limão, alho, sal e pimenta.</li>
+            <li>Em um refratário ou papel-alumínio, faça uma cama com os vegetais.</li>
+            <li>Coloque o peixe por cima, regue com azeite e acrescente as ervas.</li>
+            <li>Cubra com papel-alumínio.</li>
+            <li>Leve ao forno a 180 °C por 25–30 minutos.</li>
+            <li>Retire o papel nos últimos 5 minutos pra dourar levemente.</li>
+            <br>
+            <strong>Por que essa refeição é ótima?</strong>
+            <li>Peixe → proteína leve + ômega-3</li>
+            <li>Vegetais → fibras e micronutrientes</li>
+            <li>Pouca gordura → fácil digestão</li>
+        </ul>
+    </div>
+    <div class="lanchessaudaveis">Lanches Saudáveis</div>
+    <div class="iogurtenatural">Iogurte Natural com Frutas e Sementes</div>
+    <div class="imagemiogurtenatural"></div>
+    <div class="receitaiogurte">
+        <ul>
+            <p><strong>Ingredientes:</strong></p>
+            <li>1 copo (170–200 g) de iogurte natural (integral ou desnatado)</li>
+            <li>1 fruta picada (banana, maçã, morango, mamão ou manga) 🍓🍌</li>
+            <li>1 colher de sopa de sementes (chia, linhaça ou mix de sementes)</li>
+            <li>Opcional: 1 colher de sopa de aveia ou granola sem açúcar</li>
+            <li>Opcional: mel ou canela a gosto</li>
+            <br>
+            <strong>Modo de preparo:</strong>
+            <li>Coloque o iogurte em um bowl.</li>
+            <li>Acrescente a fruta picada.</li>
+            <li>Finalize com as sementes e, se quiser, aveia/granola.</li>
+            <li>Adoce levemente com mel ou polvilhe canela.</li>
+            <br>
+            <strong>Benefícios:</strong>
+            <li>Iogurte → proteína + probióticos (intestino)</li>
+            <li>Frutas → vitaminas e energia</li>
+            <li>Sementes → fibras e gorduras boas</li>
+        </ul>
+    </div>
+    <div class="mixoleaginosas">Mix de Oleaginosas</div>
+    <div class="imagemmix"></div>
+    <div class="receitamix">
+        <ul>
+            <p><strong>Ingredientes:</strong></p>
+            <li>2 castanhas-do-pará</li>
+            <li>6 amêndoas</li>
+            <li>6 castanhas de caju</li>
+            <li>1 colher de sopa de nozes</li>
+            <li>Opcional: sementes de abóbora ou girassol</li>
+            <li><strong>Porção ideal: cerca de 25 a 30 g no total.</strong></li>
+            <br>
+            <strong>Benefícios:</strong>
+            <li>Gorduras boas (saúde do coração e saciedade)</li>
+            <li>Fonte de minerais (selênio, magnésio, zinco)</li>
+            <li>Ajuda no controle da fome entre refeições</li>
+            <br>
+            <p><strong>Dica importante:</strong></p>
+            <li>Oleaginosas são saudáveis, mas calóricas. Mais não é melhor 😉
+             O ideal é 1 porção por dia.</li>
+        </ul>
+    </div>
+    <div class="rodape"><strong>⚠️ Observação Importante: As receitas apresentadas têm caráter educativo e informativo. Para resultados mais específicos e adequados às suas necessidades, 
+    o ideal é contar com uma avaliação nutricional individualizada, realizada por um profissional qualificado.</strong></div>
+    </div>
+</body>
+</html>

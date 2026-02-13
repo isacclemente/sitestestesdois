@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica Nutricional</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  body {
+    margin: 0%;
+  }
+.divgeral {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(30, 100px);
+}
+
+/* SOBRE A CLÍNICA */
+.sobre-titulo {
+  display: grid;
+  grid-column: 4 / 18;
+  grid-row: 1 / 3;
+  text-align: center;
+  align-items: center;
+}
+
+.sobre-texto {
+  display: grid;
+  grid-column: 4 / 18;
+  grid-row: 2 / 4;
+  text-align: center;
+  align-items: center;
+}
+
+/* AVALIAÇÃO NUTRICIONAL */
+.avaliacao-titulo {
+  display: grid;
+  grid-column: 4 / 18;
+  grid-row: 5 / 6;
+  text-align: center;
+  align-items: center;
+}
+
+.avaliacao-texto {
+  display: grid;
+  grid-column: 4 / 18;
+  grid-row: 6 / 8;
+  text-align: center;
+  align-items: center;
+}
+
+.avaliacao-metodo {
+  display: grid;
+  grid-column: 4 / 18;
+  grid-row: 8 / 10;
+  text-align: center;
+  align-items: center;
+}
+
+/* DÚVIDAS FREQUENTES */
+.faq-titulo {
+  display: grid;
+  grid-column: 4 / 18;
+  grid-row: 11 / 12;
+  text-align: center;
+  align-items: center;
+}
+
+.faq-item-1,
+.faq-item-2,
+.faq-item-3,
+.faq-item-4,
+.faq-item-5 {
+  display: grid;
+  grid-column: 4 / 18;
+  text-align: center;
+  align-items: center;
+}
+
+.faq-item-1 { grid-row: 12 / 13; }
+.faq-item-2 { grid-row: 13 / 14; }
+.faq-item-3 { grid-row: 14 / 15; }
+.faq-item-4 { grid-row: 15 / 16; }
+.faq-item-5 { grid-row: 16 / 17; }
+
+/* POLÍTICA E ÉTICA */
+.politica-titulo {
+  display: grid;
+  grid-column: 4 / 18;
+  grid-row: 18 / 19;
+  text-align: center;
+  align-items: center;
+}
+
+.politica-texto {
+  display: grid;
+  grid-column: 4 / 18;
+  grid-row: 19 / 21;
+  text-align: center;
+  align-items: center;
+}
+
+/* AGENDAMENTO */
+.agendamento-titulo {
+  display: grid;
+  grid-column: 4 / 18;
+  grid-row: 22 / 23;
+  text-align: center;
+  align-items: center;
+}
+
+.agendamento-texto {
+  display: grid;
+  grid-column: 4 / 18;
+  grid-row: 23 / 25;
+  text-align: center;
+  align-items: center;
+}
+
+.agendamento-botao {
+  display: grid;
+  grid-column: 8 / 14;
+  grid-row: 25 / 26;
+  text-align: center;
+  align-items: center;
+}
+
+/* MEDIA QUERY MOBILE */
+@media (max-width: 768px) {
+
+.divgeral {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(30, 100px);
+}
+
+.sobre-titulo, .sobre-texto,
+.avaliacao-titulo, .avaliacao-texto, .avaliacao-metodo,
+.faq-titulo, .faq-item-1, .faq-item-2, .faq-item-3, .faq-item-4, .faq-item-5,
+.politica-titulo, .politica-texto,
+.agendamento-titulo, .agendamento-texto, .agendamento-botao {
+  display: grid;
+  grid-column: 2 / 20;
+  text-align: center;
+  align-items: center;
+}
+
+.sobre-titulo { 
+  grid-column: 1/21;
+  grid-row: 1 / 4;
+  font-size: 60px;
+  color: white;
+  background-image: url("C:/Users/isacc/teste/imagens.html/img/nutriçãocabeçalho.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+.sobre-texto { grid-row: 3 / 4; }
+
+.avaliacao-titulo { 
+  grid-row: 4 / 5;
+  color: rgb(84, 83, 83);
+  text-align: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+ }
+.avaliacao-texto { grid-row: 5 / 7; }
+.avaliacao-metodo { 
+  grid-row: 8 / 10;
+  color: rgb(84, 83, 83);
+  text-align: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+ }
+
+.faq-titulo { 
+  grid-row: 7 / 8;
+  color: rgb(84, 83, 83);
+  text-align: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+ }
+.faq-item-1 { 
+  grid-row: 8 / 9;
+  font-size: 20px;
+  color: rgb(84, 83, 83);
+  text-align: left;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+}
+.descriçãofaq1 {
+  grid-column: 2/20;
+  grid-row: 9/11;
+  text-align: left;
+  align-items: center;
+  color: rgb(84, 83, 83);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.faq-item-2 { 
+  grid-row: 11 / 12;
+  color: rgb(84, 83, 83);
+  font-size: 20px;
+  text-align: left;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+ }
+.descriçãofaq2 {
+  display: grid;
+  grid-column: 2/20;
+  grid-row: 12/14;
+  text-align: left;
+  align-items: center;
+  color: rgb(84, 83, 83);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.faq-item-3 { 
+  grid-row: 14 / 15;
+  color: rgb(84, 83, 83);
+  font-size: 20px;
+  text-align: left;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+ }
+.descriçãofaq3 {
+  display: grid;
+  grid-column: 2/20;
+  grid-row: 15/17;
+  text-align: left;
+  align-items: center;
+  color: rgb(84, 83, 83);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.faq-item-4 { 
+  grid-row: 17 / 18;
+  color: rgb(84, 83, 83);
+  font-size: 20px;
+  text-align: left;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+}
+.descriçãofaq4 {
+  display: grid;
+  grid-column: 2/20;
+  grid-row: 18/20;
+  text-align: left;
+  align-items: center;
+  color: rgb(84, 83, 83);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.faq-item-5 { 
+  grid-row: 20 / 21;
+  color: rgb(84, 83, 83);
+  font-size: 20px;
+  text-align: left;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+ }
+.descriçãofaq5 {
+  display: grid;
+  grid-column: 2/20;
+  grid-row: 21/23;
+  text-align: left;
+  align-items: center;
+  color: rgb(84, 83, 83);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.politica-titulo { 
+  grid-row: 23 / 24;
+  color: rgb(84, 83, 83);
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+}
+ }
+.politica-texto { 
+  grid-row: 24 / 26;
+  text-align: center;
+  align-items: center;
+  color: rgb(84, 83, 83);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+ }
+
+.agendamento-titulo { 
+  grid-row: 26 / 27;
+  color: rgb(84, 83, 83);
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+ }
+.agendamento-texto { 
+  grid-row: 27 / 29;
+  text-align: center;
+  align-items: center;
+  color: rgb(84, 83, 83);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+ }
+.agendamento-botao { grid-row: 29 / 30; }
+
+}
+</style>
+</head>
+
+<body>
+<div class="divgeral">
+
+  <!-- SOBRE A CLÍNICA -->
+  <div class="sobre-titulo">Sobre a Clínica</div>
+
+  <!-- AVALIAÇÃO NUTRICIONAL -->
+  <div class="avaliacao-titulo">Avaliação Nutricional</div>
+  <div class="avaliacao-texto">
+    O primeiro passo para resultados reais é uma avaliação nutricional completa e estratégica.
+Cada detalhe é analisado — hábitos alimentares, rotina, histórico de saúde e objetivos — para criar um plano 
+totalmente personalizado, baseado em ciência, que se adapta à sua realidade e gera mudanças eficazes, seguras e duradouras.
+  </div>
+
+  <!-- DÚVIDAS FREQUENTES -->
+  <div class="faq-titulo">Dúvidas Frequentes</div>
+  <div class="faq-item-1">
+    Como funciona a consulta nutricional? </div>
+    <div class="descriçãofaq1">A consulta nutricional é totalmente individual e personalizada, iniciando com uma avaliação detalhada do histórico de saúde, hábitos alimentares, rotina e objetivos pessoais. A partir dessa análise, são identificadas necessidades específicas para a construção de estratégias
+     nutricionais eficazes, seguras e alinhadas à realidade do paciente, visando resultados consistentes e sustentáveis.
+  </div>
+  <div class="faq-item-2">
+    O atendimento pode ser presencial ou online?</div>
+    <div class="descriçãofaq2">Oferecemos atendimento presencial e online, garantindo o mesmo padrão de qualidade, atenção individualizada e acompanhamento contínuo em ambas as modalidades. Todo o processo é conduzido de forma organizada e humanizada, 
+    assegurando suporte constante, orientação clara e resultados consistentes, independentemente do formato escolhido.
+  </div>
+  <div class="faq-item-3">
+    Preciso fazer exames?</div>
+    <div class="descriçãofaq3">Quando necessário, podem ser solicitados exames laboratoriais para uma análise mais precisa do estado de saúde e das necessidades nutricionais. Esses dados auxiliam na elaboração de um plano alimentar mais assertivo, 
+    seguro e personalizado, garantindo decisões baseadas em critérios científicos e maior eficácia nos resultados.
+  </div>
+  <div class="faq-item-4">
+    Com que frequência devo retornar?</div>
+    <div class="descriçãofaq4">A frequência dos retornos varia de acordo com as necessidades, objetivos e evolução de cada paciente. De forma geral, recomenda-se o acompanhamento a cada 2 a 4 semanas, permitindo ajustes estratégicos no plano alimentar, 
+    avaliação dos resultados e suporte contínuo para garantir progresso seguro e consistente.
+  </div>
+  <div class="faq-item-5">
+    O plano alimentar é adaptável?</div>
+    <div class="descriçãofaq5">Sim. O plano alimentar é totalmente flexível e desenvolvido de forma personalizada, respeitando sua rotina, preferências alimentares, cultura e objetivos de saúde. 
+    As estratégias são ajustadas conforme sua evolução, garantindo praticidade, adesão e resultados sustentáveis a longo prazo.
+  </div>
+
+  <!-- POLÍTICA E ÉTICA -->
+  <div class="politica-titulo">Política e Ética Profissional</div>
+  <div class="politica-texto">
+    Atuamos conforme o Código de Ética do Nutricionista, garantindo respeito, responsabilidade e sigilo profissional. Todos os dados são protegidos conforme a LGPD e avisos legais são respeitados.
+  </div>
+
+  <!-- AGENDAMENTO -->
+  <div class="agendamento-titulo">Agendamento</div>
+  <div class="agendamento-texto">
+    Agende sua consulta de forma simples e rápida.
+  </div>
+  <div class="agendamento-botao">
+    <button>Agendar Consulta</button>
+  </div>
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Nutricional</title>
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+        body {
+            margin: 0%;
+        }
+    .divgeral {
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(16, 100px);
+        }
+
+        /* ===== DESKTOP ===== */
+
+        .avaliacao-titulo {
+            display: grid;
+            grid-column: 4 / 18;
+            grid-row: 2 / 3;
+            text-align: center;
+            align-items: center;
+        }
+
+        .avaliacao-intro {
+            display: grid;
+            grid-column: 5 / 17;
+            grid-row: 3 / 4;
+            color: rgb(84, 83, 83);
+            text-align: left;
+            align-items: center;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
+
+        .avaliacao-oque {
+            display: grid;
+            grid-column: 4 / 18;
+            grid-row: 5 / 7;
+            color: rgb(84, 83, 83);
+            text-align: left;
+            align-items: center;
+            font-family: "Merriweather", serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+        }
+
+        .avaliacao-metodo {
+            display: grid;
+            grid-column: 4 / 18;
+            grid-row: 7 / 9;
+            text-align: center;
+            align-items: center;
+        }
+
+        .avaliacao-diferencial {
+            display: grid;
+            grid-column: 4 / 18;
+            grid-row: 9 / 11;
+            text-align: center;
+            align-items: center;
+        }
+
+        .avaliacao-compromisso {
+            display: grid;
+            grid-column: 4 / 18;
+            grid-row: 11 / 13;
+            text-align: center;
+            align-items: center;
+        }
+
+        /* ===== MOBILE ===== */
+
+        @media (max-width: 768px) {
+
+            .avaliacao-titulo {
+                display: grid;
+                grid-column: 1 / 21;
+                grid-row: 1 / 4;
+                font-size: 30px;
+                color: white;
+                text-align: center;
+                align-items: center;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/nutriçãocabeçalho.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .avaliacao-intro {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 4 / 5;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                style: normal;
+            }
+
+            .avaliacao-oque {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 5 / 6;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-size: 25px;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+            .avaliacaooquedes {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 6 / 8;
+                text-align: left;
+                align-items: center;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                style: normal;
+                
+            }
+            .avaliacao-metodo {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 8 / 9;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-size: 25px;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+            .avaliacaometododes {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 9 / 11;
+                text-align: left;
+                align-items: center;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                style: normal;
+            }
+            .avaliacao-diferencial {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 11 / 12;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-size: 25px;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+            .avaliacaodiferencialdes {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 12 / 14;
+                text-align: left;
+                align-items: center;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                style: normal;
+            }
+            .avaliacao-compromisso {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 14 / 15;
+                color: rgb(84, 83, 83);
+                font-size: 25px;
+                text-align: left;
+                align-items: center;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+            .avaliacaocompromissodes {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 15 / 17;
+                text-align: left;
+                align-items: center;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                style: normal;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="divgeral">
+
+    <div class="avaliacao-titulo">
+        <h2>Avaliação Nutricional</h2>
+    </div>
+
+    <div class="avaliacao-intro">
+        <p>
+            A avaliação nutricional é o ponto de partida para um acompanhamento
+            eficaz, seguro e personalizado.
+        </p>
+    </div>
+
+    <div class="avaliacao-oque">
+        O que é a Avaliação Nutricional</div>
+            <div class="avaliacaooquedes">A avaliação nutricional é um processo completo e aprofundado que vai muito além do peso na balança ou de medidas isoladas. Ela considera hábitos alimentares, rotina diária, histórico de saúde, exames (quando disponíveis), estilo de vida, preferências alimentares e objetivos pessoais. 
+            Essa análise ampla possibilita uma compreensão real do indivíduo como um todo, e não apenas de números.
+    </div>
+
+    <div class="avaliacao-metodo">
+        Como funciona o método</div>
+            <div class="avaliacaometododes">O método adotado é baseado em uma análise detalhada, criteriosa e individualizada, utilizando princípios técnicos e científicos atualizados. Cada informação coletada contribui para a definição de condutas precisas, 
+            seguras e eficientes, sempre com foco em resultados sustentáveis e na promoção da saúde a longo prazo.
+    </div>
+
+    <div class="avaliacao-diferencial">
+        Diferencial do acompanhamento</div>
+            <div class="avaliacaodiferencialdes">Nenhum plano alimentar é genérico ou padronizado. O acompanhamento é humano, estratégico e flexível, respeitando a individualidade biológica, comportamental e emocional de cada paciente. 
+            As condutas são ajustadas conforme a evolução, dificuldades e mudanças de rotina, garantindo maior adesão e constância.
+    </div>
+
+    <div class="avaliacao-compromisso">
+        Compromisso profissional</div>
+            <div class="avaliacaocompromissodes">Todo o processo é conduzido com ética, responsabilidade e embasamento técnico-científico, seguindo as diretrizes profissionais da Nutrição. O compromisso é oferecer um atendimento seguro, 
+            transparente e de qualidade, priorizando sempre a saúde, o bem-estar e a qualidade de vida do paciente.
+    </div>
+
+</div>
+
+</body>
+</html>

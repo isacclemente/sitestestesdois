@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialidades</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+        body {
+        background-color: white;
+        margin: 0%;
+    }
+        .divgeral {
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(30, 100px);
+        }
+
+        @media (max-width: 768px) {
+            .divgeral {
+                display: grid;
+                grid-template-columns: repeat(20, 1fr);
+                grid-template-rows: repeat(41, 100px);
+            }
+        }
+
+        .titulo-especialidades {
+            display: grid;
+            grid-column: 1 / 21;
+            grid-row: 1 / 3;
+            text-align: center;
+            align-items: center;
+        }
+
+        .intro-especialidades {
+            display: grid;
+            grid-column: 4 / 18;
+            grid-row: 3 / 5;
+            text-align: center;
+            align-items: center;
+        }
+
+        .nutricao-clinica {
+            display: grid;
+            grid-column: 2 / 8;
+            grid-row: 6 / 9;
+            text-align: center;
+            align-items: center;
+        }
+
+        .emagrecimento {
+            display: grid;
+            grid-column: 8 / 14;
+            grid-row: 6 / 9;
+            text-align: center;
+            align-items: center;
+        }
+
+        .reeducacao {
+            display: grid;
+            grid-column: 14 / 20;
+            grid-row: 6 / 9;
+            text-align: center;
+            align-items: center;
+        }
+
+        .nutricao-esportiva {
+            display: grid;
+            grid-column: 3 / 9;
+            grid-row: 10 / 13;
+            text-align: center;
+            align-items: center;
+        }
+
+        .hipertrofia {
+            display: grid;
+            grid-column: 9 / 15;
+            grid-row: 10 / 13;
+            text-align: center;
+            align-items: center;
+        }
+
+        .nutricao-funcional {
+            display: grid;
+            grid-column: 15 / 21;
+            grid-row: 10 / 13;
+            text-align: center;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .titulo-especialidades {
+                display: grid;
+                grid-column: 1 / 21;
+                grid-row: 1 / 4;
+                color: bisque;
+                text-align: center;
+                align-items: center;
+                font-size: 23px;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/nutriçãocabeçalho.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .intro-especialidades {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 4 / 5;
+                color: rgb(84, 83, 83); 
+                text-align: center;
+                align-items: center;
+            }
+
+            .nutricao-clinica {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 9 / 11;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+            }
+
+            .emagrecimentosaudavel {
+                display: grid;
+                font-size: 30px;
+                grid-column: 2 / 20;
+                grid-row: 11 / 12;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+            .imagememagrecimento {
+                display: grid;
+                grid-column: 2/20;
+                grid-row: 12/15;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/emagrecimentosaudável.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 4px;
+            }
+            .descriçãoemagrecimentosaudavel {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 15 / 17;
+                text-align: left;
+                align-items: center;
+                color: rgb(84, 83, 83);
+                font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            }
+            .reeducacao {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 17 / 18;
+                font-size: 30px;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+            .imagemdescriçãoreeducacao {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 18/21;
+                text-align: left;
+                align-items: center;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/reeducaçãoalimentar.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 4px;
+            }
+            
+            .descriçãoreeducacao {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 21/23;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            }
+            .nutricao-esportiva {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 23 / 24;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-size: 30px;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+            
+            .imagemnutricaoesportiva {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 24 / 27;
+                text-align: center;
+                align-items: center;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/nutricaoesportiva.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 4px;
+            }
+            .descriçãonutriçãoesportiva {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 27 / 29;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+            .hipertrofia {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 29 / 30;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-size: 30px;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+
+            .imagemhipertrofia {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 30 / 33;
+                text-align: center;
+                align-items: center;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/hipertrofiamuscular.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 4px;
+            }
+            .descricaohipertrofia {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 33 / 35;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            }
+
+            .nutricao-funcional {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 35 / 36;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-size: 30px;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+
+            .imagemnutricaofuncional {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 36 / 39;
+                text-align: center;
+                align-items: center;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/nutriçãofuncionalum.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 4px;
+            }
+            .descricaonutrucaofuncional {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 39 / 41;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            }
+            
+            .whatsapp {
+                display: grid;
+                grid-column: 8/14;
+                grid-row: 40/41;
+                align-items: center;
+            }
+            button {
+                background-color: rgb(66, 198, 66);
+                border-radius: 8px;
+                padding: 10px 20px;
+                font-size: 15px;
+                height: 40px;
+            }
+            .imagem1 {
+            display: grid;
+            grid-column: 2/20;
+            grid-row: 6/9;
+            border-radius: 4px;
+            background-image: url("C:/Users/isacc/teste/imagens.html/img/nutriçãoclínica.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            }
+            .nutriçãotitulo {
+                display: grid;
+                color: rgb(84, 83, 83);
+                grid-column: 2/20;
+                grid-row: 5/6;
+                font-size: 34px;
+                text-align: left;
+                align-items: center;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+    "wdth" 100;
+            }
+           img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            overflow: hidden;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divgeral">
+
+        <div class="titulo-especialidades">
+            <h1>Especialidades em Nutrição</h1>
+        </div>
+
+        <div class="intro-especialidades">
+            <p>Atendimento nutricional personalizado, com foco em saúde, 
+        bem-estar e resultados reais, respeitando sua individualidade e rotina.</p>
+        </div>
+
+        
+            <div class="nutriçãotitulo">
+                    Nutrição clínica
+            </div>
+            <div class="nutricao-clinica">
+            Avaliação nutricional completa para prevenção e tratamento de doenças. O acompanhamento é individualizado, considerando histórico de saúde, 
+            exames e hábitos alimentares, com foco em melhorar a qualidade de vida de forma segura e eficaz.
+        </div>
+        <div class="imagem1">
+        </div>
+
+       
+            <div class="emagrecimentosaudavel">Emagrecimento Saudável</div>
+            <div class="imagememagrecimento"></div>
+            <div class="descriçãoemagrecimentosaudavel">
+            Processo de emagrecimento baseado em equilíbrio e constância, sem dietas restritivas. O plano 
+            alimentar é adaptado à sua rotina, promovendo perda de peso de forma sustentável e manutenção dos resultados a longo prazo.
+        </div>
+
+        <div class="reeducacao">
+            Reeducação Alimentar
+                </div>
+                <div class="imagemdescriçãoreeducacao"></div>
+            <div class="descriçãoreeducacao">alimentar voltado para melhorar o desempenho físico, aumentar
+            a energia nos treinos e favorecer a recuperação muscular, de acordo com os objetivos e nível de atividade de cada pessoa.
+        </div>
+
+        <div class="nutricao-esportiva">
+            Nutrição Esportiva</div>
+            <div class="imagemnutricaoesportiva"></div>
+           <div class="descriçãonutriçãoesportiva">A alimentação exerce um papel fundamental no desempenho físico, 
+            mental e na capacidade de recuperação do organismo. Um plano nutricional bem estruturado não apenas melhora a performance, como também reduz o risco de lesões, acelera a regeneração muscular e contribui para a saúde a longo prazo.
+        </div>
+
+        <div class="hipertrofia">
+            Hipertrofia Muscular</div>
+            <div class="imagemhipertrofia"></div>
+            <div class="descricaohipertrofia">Planejamento alimentar direcionado para ganho de massa muscular, 
+            com foco em desempenho, recuperação e resultados consistentes, de acordo com o tipo de treino.
+        </div>
+
+        <div class="nutricao-funcional">
+            Nutrição Funcional</div>
+            <div class="imagemnutricaofuncional"></div>
+    <div class="descricaonutrucaofuncional">Abordagem que busca o equilíbrio do organismo como um todo, 
+            considerando aspectos físicos, metabólicos e individuais para promover saúde e bem-estar.</p>
+        </div>
+        <div class="whatsapp">
+            <a href="https://wa.me/5582993321600">
+                <button>fale conosco</button>
+            </a>
+
+        </div>
+        
+
+    </div>
+</body>
+</html>

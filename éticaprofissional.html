@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política e Ética Profissional</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+        body {
+            margin: 0%;
+        }
+        .divgeral {
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(35, 100px);
+        }
+
+        /* ===== DESKTOP ===== */
+
+        .politica-titulo {
+            display: grid;
+            grid-column: 4 / 18;
+            grid-row: 2 / 3;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            align-items: center;
+            background-image: url("C:/Users/isacc/teste/imagens.html/img/politicaeetica.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .politica-intro {
+            display: grid;
+            grid-column: 5 / 17;
+            grid-row: 3 / 4;
+            text-align: center;
+            align-items: center;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
+
+        .codigo-etica {
+            display: grid;
+            grid-column: 4 / 18;
+            grid-row: 5 / 7;
+            text-align: center;
+            align-items: center;
+        }
+
+        .lgpd {
+            display: grid;
+            grid-column: 4 / 18;
+            grid-row: 7 / 9;
+            text-align: center;
+            align-items: center;
+        }
+
+        .avisos-legais {
+            display: grid;
+            grid-column: 4 / 18;
+            grid-row: 9 / 11;
+            text-align: center;
+            align-items: center;
+        }
+
+        /* ===== MOBILE ===== */
+
+        @media (max-width: 768px) {
+
+            .politica-titulo {
+                display: grid;
+                grid-column: 1 / 21;
+                grid-row: 1 / 4;
+                text-align: center;
+                align-items: center;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/politicaeetica.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .politica-intro {
+                display: grid;
+                grid-column: 1 / 21;
+                grid-row: 4 / 6;
+                font-size: 14px;
+                text-align: center;
+                align-items: center;
+                color: rgb(84, 83, 83);
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+            }
+             .codigodeeticatitulo {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 6 / 7;
+                text-align: left;
+                align-items: center;
+                color: rgb(84, 83, 83);
+                font-size: 35px;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+
+            .imagemcodigo {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 7 / 10;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/codigoimagem.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 4px;
+            }
+            .codigo-etica {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 10 / 12;
+                text-align: left;
+                align-items: center;
+                font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+            }
+
+            .lgpdtitulo {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 12 / 13;
+                text-align: center;
+                align-items: center;
+                font-size: 33px;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+            .imagemlgpd {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 13 / 16;
+                text-align: center;
+                align-items: center;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/lgpdimagem.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 4px;
+            }
+            .lgpd {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 16 / 18;
+                text-align: left;
+                align-items: center;
+                color: rgb(84, 83, 83);
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+            }
+            .avisoslegais {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 18 / 19;
+                text-align: center;
+                align-items: center;
+                font-size: 35px;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+            .imagemavisoslegais {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 19 / 22;
+                text-align: center;
+                align-items: center;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/avisoslegaisDOIS.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 4px;
+            }
+            .avisoslegaisdes {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 22 / 24;
+                text-align: left;
+                align-items: center;
+                text-align: left;
+                align-items: center;
+                color: rgb(84, 83, 83);
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+            }
+            .responsabilidadeprofissional {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 24 / 25;
+                text-align: center;
+                align-items: center;
+                font-size: 33px;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+            .imagemresponsabilidade {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 25 / 28;
+                text-align: center;
+                align-items: center;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/responsabilidadeprofissional.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 4px;
+            }
+            .responsabilidadeprofissionaldes {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 28 / 30;
+                text-align: center;
+                align-items: center;
+                text-align: left;
+                align-items: center;
+                color: rgb(84, 83, 83);
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+            }
+            .atualizaçãoequalidade {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 30 / 31;
+                text-align: left;
+                align-items: center;
+                font-size: 33px;
+                color: rgb(84, 83, 83);
+                text-align: left;
+                align-items: center;
+                font-family: "Merriweather", serif;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                font-variation-settings:
+            }
+            .imagematualizaçao {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 31 / 34;
+                text-align: left;
+                align-items: center;
+                background-image: url("C:/Users/isacc/teste/imagens.html/img/LIVROS.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 4px;
+            }
+            .atualizaçãoequalidadedes {
+                display: grid;
+                grid-column: 2 / 20;
+                grid-row: 34 / 36;
+                text-align: left;
+                align-items: center;
+                text-align: left;
+                align-items: center;
+                color: rgb(84, 83, 83);
+                font-family: "Montserrat", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="divgeral">
+
+    <div class="politica-titulo">
+        <h2>Política e Ética Profissional</h2>
+    </div>
+
+    <div class="politica-intro">
+        O atendimento nutricional é conduzido com base nos mais elevados princípios éticos, legais e técnicos da profissão, assegurando um serviço responsável, transparente e 
+        comprometido com o bem-estar do paciente. Todo o acompanhamento é realizado com respeito, confidencialidade e segurança, valorizando a individualidade, a autonomia e os objetivos de cada pessoa.
+    </div>
+    <div class="codigodeeticatitulo">Código de Ética</div>
+    <div class="imagemcodigo"></div>
+
+    <div class="codigo-etica">
+        
+            Todos os atendimentos seguem rigorosamente o Código de Ética e de Conduta do Nutricionista, conforme as diretrizes do Conselho Federal de Nutricionistas (CFN). O trabalho é pautado no respeito à dignidade humana, na promoção da saúde, na atuação baseada em evidências 
+            científicas e na personalização das condutas nutricionais, sempre priorizando a segurança e a qualidade de vida do paciente.
+    </div>
+       <div class="lgpdtitulo">LGPD – Lei Geral de Proteção de Dados</div>
+       <div class="imagemlgpd"></div>
+    <div class="lgpd">
+        Em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), todas as informações pessoais e dados sensíveis fornecidos durante o atendimento são tratados com total confidencialidade. Os dados são utilizados exclusivamente para fins de avaliação, 
+        acompanhamento e evolução nutricional, sendo armazenados de forma segura e jamais compartilhados sem o consentimento do paciente.
+    </div>
+        <div class="avisoslegais"><strong>Avisos Legais</strong></div>
+        <div class="imagemavisoslegais"></div>
+    <div class="avisoslegaisdes">
+       As orientações e planos alimentares fornecidos têm caráter educativo e preventivo, não substituindo diagnósticos, prescrições ou tratamentos médicos. Quando necessário, o acompanhamento 
+       nutricional pode ser realizado de forma integrada com outros profissionais da área da saúde, visando um cuidado completo, seguro e eficaz.
+    </div>
+      <div class="responsabilidadeprofissional"><strong>Responsabilidade Profissional</strong></div>
+      <div class="imagemresponsabilidade"></div>
+      <div class="responsabilidadeprofissionaldes">O nutricionista se compromete a atuar dentro dos limites de sua formação e atribuições legais, oferecendo orientações baseadas em conhecimento técnico-científico atualizado. 
+        Todas as condutas adotadas visam a segurança do paciente, respeitando suas condições clínicas, histórico de saúde e necessidades individuais
+    </div>
+    <div class="atualizaçãoequalidade">Atualização e Qualidade do Atendimento</div>
+    <div class="imagematualizaçao"></div>
+    <div class="atualizaçãoequalidadedes">O profissional mantém-se em constante atualização por meio de estudos, cursos e capacitações, garantindo que as práticas adotadas estejam alinhadas com as mais recentes evidências científicas da Nutrição. 
+        Esse compromisso assegura um atendimento de qualidade, ético e eficiente, focado em resultados sustentáveis e na promoção da saúde a longo prazo.
+    </div>
+</div>
+
+</body>
+</html>
